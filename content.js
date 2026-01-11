@@ -164,19 +164,32 @@ function startAreaSelection() {
             confirmBtn.style.transform = 'translateY(0)';
         };
         confirmBtn.onclick = () => {
-            // 清理 UI
-            cleanup();
+            // 先隐藏 UI 元素
+            overlay.style.display = 'none';
+            selectionBox.style.display = 'none';
+            buttonContainer.style.display = 'none';
+            const hintElement = document.getElementById('__screenshot_hint');
+            if (hintElement) hintElement.style.display = 'none';
 
-            // 发送选区信息到 background
-            chrome.runtime.sendMessage({
-                action: 'captureSelectedAreaComplete',
-                rect: {
-                    x: rect.left,
-                    y: rect.top,
-                    width: rect.width,
-                    height: rect.height
-                }
-            });
+            // 等待一小段时间让页面重新渲染，然后截图
+            setTimeout(() => {
+                // 发送选区信息到 background
+                chrome.runtime.sendMessage({
+                    action: 'captureSelectedAreaComplete',
+                    rect: {
+                        x: rect.left,
+                        y: rect.top,
+                        width: rect.width,
+                        height: rect.height
+                    },
+                    devicePixelRatio: window.devicePixelRatio || 1
+                });
+
+                // 截图完成后清理 UI
+                setTimeout(() => {
+                    cleanup();
+                }, 100);
+            }, 50);
         };
 
         // 取消按钮

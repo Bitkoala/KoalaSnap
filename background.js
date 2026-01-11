@@ -199,8 +199,8 @@ async function handleAreaSelectionComplete(request, sender) {
       format: 'png'
     });
 
-    // 裁剪图片
-    const croppedImage = await cropImage(dataUrl, request.rect);
+    // 裁剪图片（传入 devicePixelRatio）
+    const croppedImage = await cropImage(dataUrl, request.rect, request.devicePixelRatio || 1);
 
     // 下载
     const now = new Date();
@@ -253,13 +253,13 @@ async function stitchImages(screenshots, totalHeight, viewportHeight, dpr) {
 }
 
 // 工具函数：裁剪图片
-async function cropImage(dataUrl, rect) {
+async function cropImage(dataUrl, rect, dpr = 1) {
   return new Promise((resolve, reject) => {
     fetch(dataUrl)
       .then(res => res.blob())
       .then(blob => createImageBitmap(blob))
       .then(bitmap => {
-        const dpr = 1; // Service Worker 中无法访问 window.devicePixelRatio
+        // 使用传入的 devicePixelRatio
         const canvas = new OffscreenCanvas(rect.width * dpr, rect.height * dpr);
         const ctx = canvas.getContext('2d');
 

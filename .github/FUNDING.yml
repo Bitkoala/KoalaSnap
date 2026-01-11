@@ -1,0 +1,27 @@
+# GitHub Sponsors 配置文件
+# 这个文件会在 GitHub 仓库页面显示"赞助商"按钮
+
+# GitHub Sponsors 用户名（如果您启用了 GitHub Sponsors）
+# github: Bitkoala
+
+# 支付宝
+# custom: ["https://your-alipay-qr-code-url"]
+
+# 微信支付
+# custom: ["https://your-wechat-pay-qr-code-url"]
+
+# PayPal
+# custom: ["https://paypal.me/yourusername"]
+
+# 爱发电（中国开发者常用）
+custom: ["https://afdian.net/@bitkoala"]
+
+# 其他支付方式
+# patreon: yourusername
+# open_collective: yourusername
+# ko_fi: yourusername
+# tidelift: npm/package-name
+# community_bridge: project-name
+# liberapay: yourusername
+# issuehunt: yourusername
+# otechie: yourusername
