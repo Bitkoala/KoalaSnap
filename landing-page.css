@@ -113,7 +113,32 @@ body::before {
 .nav-title {
     font-size: 24px;
     font-weight: 700;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    background: linear-gradient(135deg, #6c5ce7 0%, #4834d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #6c5ce7 0%, #4834d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.stat-number {
+    font-size: 36px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #6c5ce7 0%, #4834d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footer-title {
+    font-size: 24px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #6c5ce7 0%, #4834d4 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -234,9 +259,22 @@ body::before {
 }
 
 .btn-primary {
+    background-color: var(--primary);
+    /* Fallback */
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-    color: white;
+    color: #ffffff !important;
     box-shadow: var(--shadow-md);
+}
+
+/* Force hero button visibility */
+.hero-buttons .btn-primary,
+.download-buttons .btn-primary {
+    background: linear-gradient(135deg, #6c5ce7 0%, #4834d4 100%) !important;
+    background-color: #6c5ce7 !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    opacity: 1 !important;
+    border: none !important;
 }
 
 .btn-primary:hover {

@@ -2,7 +2,8 @@
 
 > 一款强大而简洁的 Chrome 截图扩展 | A Powerful and Simple Chrome Screenshot Extension
 
-[![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Coming%20Soon-blue?style=flat-square&logo=google-chrome)](https://chrome.google.com/webstore)
+[![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Available-4285F4?style=flat-square&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/fpkacokbljmabjfnhkffnpkkggceopap)
+[![Microsoft Edge Add-ons](https://img.shields.io/badge/Microsoft%20Edge-Compatible-0078D7?style=flat-square&logo=microsoft-edge&logoColor=white)](https://microsoftedge.microsoft.com/addons/category/Edge-Extensions)
 [![GitHub](https://img.shields.io/badge/GitHub-Open%20Source-green?style=flat-square&logo=github)](https://github.com/Bitkoala/KoalaSnap)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](https://github.com/Bitkoala/KoalaSnap/blob/main/LICENSE)
 [![Version](https://img.shields.io/badge/Version-1.0.0-orange?style=flat-square)](https://github.com/Bitkoala/KoalaSnap/releases)
@@ -15,7 +16,7 @@
 
 *Powerful screenshot tool with three capture modes*
 
-[![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-blue?style=flat-square&logo=google-chrome)](https://chrome.google.com/webstore)
+[![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-blue?style=flat-square&logo=google-chrome)](https://chromewebstore.google.com/detail/fpkacokbljmabjfnhkffnpkkggceopap?utm_source=item-share-cb)
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-green?style=flat-square)](https://developer.chrome.com/docs/extensions/mv3/)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
 
