@@ -797,3 +797,215 @@ kbd {
         display: none;
     }
 }
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    color: var(--text-secondary);
+    transition: all 0.3s;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.social-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.social-icon:hover {
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.wechat-container {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.wechat-popover {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+    width: 192px;
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-xl);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+    border: 1px solid var(--glass-border);
+    pointer-events: none;
+}
+
+.wechat-container:hover .wechat-popover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-16px);
+}
+
+.wechat-qr {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.wechat-popover::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-bottom: 1px solid var(--glass-border);
+    border-right: 1px solid var(--glass-border);
+    transform: translateX(-50%) translateY(-6px) rotate(45deg);
+}
+
+/* Documentation & Installation Page Styles */
+.doc-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+}
+
+.doc-header {
+    text-align: center;
+    margin-bottom: 60px;
+    padding-top: 40px;
+}
+
+.doc-title {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.doc-content {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 48px;
+    box-shadow: var(--shadow-md);
+}
+
+.doc-content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+}
+
+.doc-content h2:first-child {
+    margin-top: 0;
+}
+
+.doc-content h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+}
+
+.doc-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+}
+
+.doc-content ul,
+.doc-content ol {
+    margin: 16px 0;
+    padding-left: 24px;
+    color: var(--text-secondary);
+}
+
+.doc-content li {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+.doc-content code {
+    background: rgba(0, 0, 0, 0.05);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    color: var(--primary-dark);
+}
+
+.doc-content pre {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 20px 0;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.doc-content pre code {
+    background: none;
+    padding: 0;
+    color: var(--text-primary);
+}
+
+.doc-content blockquote {
+    border-left: 4px solid var(--primary);
+    margin: 20px 0;
+    padding: 10px 20px;
+    background: rgba(79, 70, 229, 0.05);
+    border-radius: 0 8px 8px 0;
+}
+
+.doc-content img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    margin: 20px 0;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 32px;
+    transition: transform 0.3s;
+}
+
+.back-link:hover {
+    transform: translateX(-4px);
+}
+
+.back-link svg {
+    width: 20px;
+    height: 20px;
+}

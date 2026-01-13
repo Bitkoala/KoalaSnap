@@ -2,6 +2,7 @@
 
 > 一款强大而简洁的 Chrome 截图扩展 | A Powerful and Simple Chrome Screenshot Extension
 
+[![Official Website](https://img.shields.io/badge/Website-yijie.bitekaola.com-blueviolet?style=flat-square&logo=google-chrome&logoColor=white)](https://yijie.bitekaola.com)
 [![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Available-4285F4?style=flat-square&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/fpkacokbljmabjfnhkffnpkkggceopap)
 [![Microsoft Edge Add-ons](https://img.shields.io/badge/Microsoft%20Edge-Compatible-0078D7?style=flat-square&logo=microsoft-edge&logoColor=white)](https://microsoftedge.microsoft.com/addons/category/Edge-Extensions)
 [![GitHub](https://img.shields.io/badge/GitHub-Open%20Source-green?style=flat-square&logo=github)](https://github.com/Bitkoala/KoalaSnap)
@@ -231,6 +232,6 @@ ctx.scale(dpr, dpr);
 
 Made with ❤️ by [Bitkoala](https://github.com/Bitkoala)
 
-[GitHub Repository](https://github.com/Bitkoala/KoalaSnap) | [Report Issues](https://github.com/Bitkoala/KoalaSnap/issues)
+[Official Website](https://yijie.bitekaola.com) | [GitHub Repository](https://github.com/Bitkoala/KoalaSnap) | [Report Issues](https://github.com/Bitkoala/KoalaSnap/issues)
 
 </div>
