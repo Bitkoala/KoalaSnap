@@ -4,7 +4,7 @@
 
 [![Official Website](https://img.shields.io/badge/Website-yijie.bitekaola.com-blueviolet?style=flat-square&logo=google-chrome&logoColor=white)](https://yijie.bitekaola.com)
 [![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Available-4285F4?style=flat-square&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/fpkacokbljmabjfnhkffnpkkggceopap)
-[![Microsoft Edge Add-ons](https://img.shields.io/badge/Microsoft%20Edge-Compatible-0078D7?style=flat-square&logo=microsoft-edge&logoColor=white)](https://microsoftedge.microsoft.com/addons/category/Edge-Extensions)
+[![Microsoft Edge Add-ons](https://img.shields.io/badge/Microsoft%20Edge-Available-0078D7?style=flat-square&logo=microsoft-edge&logoColor=white)](https://microsoftedge.microsoft.com/addons/detail/koalasnap-%E8%80%83%E6%8B%89%E6%98%93%E6%88%AA/ifenceikjiikcnonfepplbljdbclijfp)
 [![GitHub](https://img.shields.io/badge/GitHub-Open%20Source-green?style=flat-square&logo=github)](https://github.com/Bitkoala/KoalaSnap)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](https://github.com/Bitkoala/KoalaSnap/blob/main/LICENSE)
 [![Version](https://img.shields.io/badge/Version-1.0.0-orange?style=flat-square)](https://github.com/Bitkoala/KoalaSnap/releases)
@@ -18,6 +18,7 @@
 *Powerful screenshot tool with three capture modes*
 
 [![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-blue?style=flat-square&logo=google-chrome)](https://chromewebstore.google.com/detail/fpkacokbljmabjfnhkffnpkkggceopap?utm_source=item-share-cb)
+[![Edge Add-on](https://img.shields.io/badge/Edge-Add--on-0078D7?style=flat-square&logo=microsoft-edge)](https://microsoftedge.microsoft.com/addons/detail/koalasnap-%E8%80%83%E6%8B%89%E6%98%93%E6%88%AA/ifenceikjiikcnonfepplbljdbclijfp)
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-green?style=flat-square)](https://developer.chrome.com/docs/extensions/mv3/)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
 
@@ -73,7 +74,12 @@
 
 ## 📦 安装方法
 
-### 开发者模式安装
+### 商店安装 (推荐)
+
+1. **Chrome 浏览器**：访问 [Chrome Web Store](https://chromewebstore.google.com/detail/fpkacokbljmabjfnhkffnpkkggceopap) 点击「添加至 Chrome」。
+2. **Edge 浏览器**：访问 [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/koalasnap-%E8%80%83%E6%8B%89%E6%98%93%E6%88%AA/ifenceikjiikcnonfepplbljdbclijfp) 点击「获取」。
+
+### 开发者模式安装 (离线使用)
 
 1. 下载或克隆本仓库
    ```bash
