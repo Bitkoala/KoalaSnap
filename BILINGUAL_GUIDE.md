@@ -10,7 +10,7 @@
 - 页脚双语
 - 使用 localStorage 保存语言偏好
 
-### 2. landing-page.html（落地页）
+### 2. index.html（落地页首页）
 ✅ 部分双语支持（主要区域已完成）
 - ✅ 导航栏（包含语言切换按钮）
 - ✅ Hero 区域（标题、副标题、按钮、统计数据）
@@ -90,7 +90,7 @@
 
 ### 当前状态
 - **privacy.html**: 100% 双语完成 ✅
-- **landing-page.html**: 约 60% 双语完成 ⏳
+- **index.html**: 约 60% 双语完成 ⏳
 
 ### 快速完成方案
 如果您需要快速完成剩余的双语适配，可以：
@@ -100,7 +100,7 @@
 3. **方案 C**: 仅保留中文版本，移除语言切换功能
 
 ### 测试方法
-1. 打开 `landing-page.html` 或 `privacy.html`
+1. 打开 `landing-page/index.html` 或 `landing-page/privacy.html`
 2. 点击右上角的语言切换按钮（"English" 或 "中文"）
 3. 观察页面内容是否正确切换
 4. 刷新页面，确认语言偏好被保存

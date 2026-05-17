@@ -1,8 +1,8 @@
 $files = @(
-    "landing-page.html",
-    "privacy.html",
-    "documentation.html",
-    "installation.html"
+    "landing-page/index.html",
+    "landing-page/privacy.html",
+    "landing-page/documentation.html",
+    "landing-page/installation.html"
 )
 
 $badDiscordPattern = 'd="M20\.211[^"]*"'

@@ -7,10 +7,10 @@ sys.stdout.reconfigure(encoding='utf-8')
 print("Starting fix_icons.py...")
 
 files = [
-    "landing-page.html",
-    "privacy.html",
-    "documentation.html",
-    "installation.html"
+    "landing-page/index.html",
+    "landing-page/privacy.html",
+    "landing-page/documentation.html",
+    "landing-page/installation.html"
 ]
 
 # We will look for part of the BAD string.

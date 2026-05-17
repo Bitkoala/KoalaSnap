@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KoalaSnap Documentation - 考拉易截使用文档">
+    <title>Documentation - KoalaSnap 使用文档</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="../icons/icon-128.png">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="../icons/icon-128.png" alt="KoalaSnap Logo" class="nav-logo">
+                <span class="nav-title">KoalaSnap</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">
+                    <span class="lang-zh">返回首页</span>
+                    <span class="lang-en" style="display: none;">Back to Home</span>
+                </a>
+                <button class="lang-toggle" onclick="toggleLanguage()">
+                    <span class="lang-zh">English</span>
+                    <span class="lang-en" style="display: none;">中文</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="doc-container">
+        <a href="index.html" class="back-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            <span class="lang-zh">返回首页</span>
+            <span class="lang-en" style="display: none;">Back to Home</span>
+        </a>
+
+        <div class="doc-header">
+            <h1 class="doc-title">
+                <span class="lang-zh">使用文档</span>
+                <span class="lang-en" style="display: none;">Documentation</span>
+            </h1>
+            <p style="color: var(--text-secondary);">
+                <span class="lang-zh">KoalaSnap 详细功能介绍与使用指南</span>
+                <span class="lang-en" style="display: none;">Detailed features and usage guide for KoalaSnap</span>
+            </p>
+        </div>
+
+        <div class="doc-content">
+            <!-- Documentation Content (Adapted from README.md) -->
+            <div class="lang-zh">
+                <h2>?? 功能特性</h2>
+
+                <h3>1. 可见区域截图</h3>
+                <p>快速截取当前屏幕可见内容。适合需要快速分享当前看到的信息时使用。</p>
+                <ul>
+                    <li>一键操作，即时保存</li>
+                    <li>快捷键：<code>Ctrl+Shift+S</code> (Mac: <code>Cmd+Shift+S</code>)</li>
+                </ul>
+
+                <h3>2. 整页滚动截图</h3>
+                <p>自动滚动并拼接完整页面，完美支持长文章和长网页。</p>
+                <ul>
+                    <li>智能识别页面高度</li>
+                    <li>自动处理固定定位元素（如导航栏）</li>
+                    <li>自动拼接成长图</li>
+                </ul>
+
+                <h3>3. 区域选择截图</h3>
+                <p>自由选择截图区域，精确控制截图范围。</p>
+                <ul>
+                    <li>可视化选择框</li>
+                    <li>鼠标拖拽调整大小</li>
+                    <li>支持 ESC 键取消操作</li>
+                </ul>
+
+                <h2>?? 使用指南</h2>
+
+                <h3>方式一：点击扩展图标</h3>
+                <ol>
+                    <li>点击浏览器工具栏的扩展图标</li>
+                    <li>在弹出窗口中选择截图模式（可见区域、整页、区域选择）</li>
+                    <li>等待截图完成并自动保存</li>
+                </ol>
+
+                <h3>方式二：使用快捷键</h3>
+                <ul>
+                    <li>按 <code>Ctrl+Shift+S</code> (Mac: <code>Cmd+Shift+S</code>)</li>
+                    <li>自动执行可见区域截图，无需打开菜单</li>
+                </ul>
+
+                <h3>截图保存位置</h3>
+                <p>截图会自动保存到浏览器的默认下载目录，文件名格式：</p>
+                <ul>
+                    <li><code>screenshot_[时间戳].png</code> - 可见区域截图</li>
+                    <li><code>screenshot_full_[时间戳].png</code> - 整页截图</li>
+                    <li><code>screenshot_area_[时间戳].png</code> - 区域截图</li>
+                </ul>
+
+                <h2>?? 常见问题</h2>
+                <p><strong>1. 某些页面无法截图？</strong></p>
+                <p>Chrome 内部页面（如 <code>chrome://</code>）和 Chrome Web Store 页面出于安全限制无法使用截图扩展。请在普通网页上试用。</p>
+
+                <p><strong>2. 整页截图不完整？</strong></p>
+                <p>对于无限加载的动态页面，整页截图可能无法截取所有内容。建议等待页面加载完成后再进行截图。</p>
+            </div>
+
+            <div class="lang-en" style="display: none;">
+                <h2>?? Features</h2>
+
+                <h3>1. Visible Area</h3>
+                <p>Quickly capture the currently visible content of the screen. Perfect for quick sharing.</p>
+                <ul>
+                    <li>One-click operation, instant save</li>
+                    <li>Shortcut: <code>Ctrl+Shift+S</code> (Mac: <code>Cmd+Shift+S</code>)</li>
+                </ul>
+
+                <h3>2. Full Page</h3>
+                <p>Automatically scroll and stitch the full page. Perfect for long articles and webpages.</p>
+                <ul>
+                    <li>Smart height detection</li>
+                    <li>Handles fixed elements (like headers) automatically</li>
+                    <li>Stitches into a thorough long image</li>
+                </ul>
+
+                <h3>3. Selected Area</h3>
+                <p>Freely select the capture area with precise control.</p>
+                <ul>
+                    <li>Visual selection box</li>
+                    <li>Drag to resize</li>
+                    <li>Press ESC to cancel</li>
+                </ul>
+
+                <h2>?? Usage Guide</h2>
+
+                <h3>Method 1: Click Extension Icon</h3>
+                <ol>
+                    <li>Click the extension icon in the toolbar</li>
+                    <li>Select capture mode (Visible, Full Page, or Area) from the popup</li>
+                    <li>Wait for the capture to finish and save automatically</li>
+                </ol>
+
+                <h3>Method 2: Use Shortcut</h3>
+                <ul>
+                    <li>Press <code>Ctrl+Shift+S</code> (Mac: <code>Cmd+Shift+S</code>)</li>
+                    <li>Automatically triggers Visible Area capture</li>
+                </ul>
+
+                <h3>Save Location</h3>
+                <p>Screenshots are automatically saved to your browser's default download directory. Filename formats:
+                </p>
+                <ul>
+                    <li><code>screenshot_[timestamp].png</code> - Visible Area</li>
+                    <li><code>screenshot_full_[timestamp].png</code> - Full Page</li>
+                    <li><code>screenshot_area_[timestamp].png</code> - Area Selection</li>
+                </ul>
+
+                <h2>?? FAQ</h2>
+                <p><strong>1. Cannot capture on some pages?</strong></p>
+                <p>Chrome internal pages (like <code>chrome://</code>) and the Chrome Web Store are restricted for
+                    security reasons. Please try on normal webpages.</p>
+
+                <p><strong>2. Full page capture incomplete?</strong></p>
+                <p>For infinitely scrolling dynamic pages, full page capture might not get everything. Please ensure the
+                    page is fully loaded before capturing.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../icons/icon-128.png" alt="KoalaSnap Logo" class="footer-logo">
+                    <span class="footer-title">KoalaSnap</span>
+                    <p class="footer-desc">
+                        <span class="lang-zh">让截图变得简单</span>
+                        <span class="lang-en" style="display: none;">Make Screenshots Easy</span>
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/Bitkoala" target="_blank" class="social-icon" title="GitHub">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                            </svg>
+                        </a>
+                        <a href="https://x.com/Bitekaola" target="_blank" class="social-icon" title="X (Twitter)">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                        <a href="https://t.me/BitekaolaTeam" target="_blank" class="social-icon" title="Telegram">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                            </svg>
+                        </a>
+                        <div class="wechat-container">
+                            <a href="javascript:void(0)" class="social-icon" title="WeChat">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M8 .5C3.58 .5 0 3.33 0 6.83c0 2.12 1.3 4.02 3.29 5.3-.17 .64-1.01 2.27-1.16 2.53-.05 .08 .04 .16 .13 .11 1.44-.81 3.23-1.8 4.29-2.31 .48 .09 .98 .14 1.49 .11C7.43 11.53 7 10.42 7 9.22c0-3.66 4.34-6.64 9.7-6.64 .51 0 1 .03 1.48 .08C16.89 1.1 12.72 .5 8 .5zm5.79 7.64c-3.14 0-5.69 2.05-5.69 4.58 0 2.53 2.55 4.58 5.69 4.58 .69 0 1.35-.11 1.95-.3 .74 .37 2.19 1.05 2.76 1.3 .06 .03 .13-.02 .1-.08-.18-.46-.73-1.63-.85-2.07 1.39-.9 2.27-2.22 2.27-3.69 .01-2.53-2.54-4.58-5.68-4.58zM6.63 4.28c.38 0 .69 .26 .69 .58s-.31 .58-.69 .58c-.38 0-.69-.26-.69-.58s.31-.58 .69-.58zm3.74 0c.38 0 .69 .26 .69 .58s-.31 .58-.69 .58c-.38 0-.69-.26-.69-.58s.31-.58 .69-.58zm2.87 7.07c.38 0 .69 .26 .69 .58s-.31 .58-.69 .58c-.38 0-.69-.26-.69-.58s.31-.58 .69-.58zm4.08 0c.38 0 .69 .26 .69 .58s-.31 .58-.69 .58c-.38 0-.69-.26-.69-.58s.31-.58 .69-.58z" />
+                                </svg>
+                            </a>
+                            <div class="wechat-popover">
+                                <img src="https://pickoala.com/img/images/2026/01/05/RM45hGH4.webp" alt="WeChat QR"
+                                    class="wechat-qr">
+                            </div>
+                        </div>
+                        <a href="https://discord.gg/QbdktDgGm8" target="_blank" class="social-icon" title="Discord">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09.01-.02-.01-.07-.07-.03-1.5.26-2.93.71-4.27 1.33-.01 0-.02.01-.03.02-2.72 4.07-3.47 8.03-3.1 11.95 0 .02.01.04.03.05 1.8 1.32 3.53 2.12 5.2 2.65.03.01.06 0 .07-.03.4-.54.76-1.13 1.07-1.74.02-.04 0-.08-.04-.09-.66-.25-1.29-.54-1.89-.87-.04-.02-.04-.07 0-.09.12-.08.24-.17.35-.25.02-.01.04-.01.06 0 3.73 1.7 7.76 1.7 11.44 0 .02-.01.04-.01.06 0 .11.08.23.17.35.25.04.02.04.07 0 .09-.6.33-1.23.62-1.89.87-.04.01-.06.05-.04.09.31.61.67 1.2 1.07 1.74.01.03.04.04.07.03 1.67-.53 3.4-1.33 5.2-2.65.02-.01.03-.03.03-.05.41-4.32-.46-8.28-3.1-11.95-.01-.01-.02-.02-.03-.02ZM8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12 0 1.17-.84 2.12-1.89 2.12zm6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12 0 1.17-.84 2.12-1.89 2.12z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="lang-zh">产品</h4>
+                        <h4 class="lang-en" style="display: none;">Product</h4>
+                        <a href="index.html#features">
+                            <span class="lang-zh">功能特性</span>
+                            <span class="lang-en" style="display: none;">Features</span>
+                        </a>
+                        <a href="index.html#how-it-works">
+                            <span class="lang-zh">使用方法</span>
+                            <span class="lang-en" style="display: none;">How It Works</span>
+                        </a>
+                        <a href="index.html#download">
+                            <span class="lang-zh">立即下载</span>
+                            <span class="lang-en" style="display: none;">Download</span>
+                        </a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="lang-zh">资源</h4>
+                        <h4 class="lang-en" style="display: none;">Resources</h4>
+                        <a href="documentation.html">
+                            <span class="lang-zh">使用文档</span>
+                            <span class="lang-en" style="display: none;">Documentation</span>
+                        </a>
+                        <a href="installation.html">
+                            <span class="lang-zh">安装指南</span>
+                            <span class="lang-en" style="display: none;">Installation</span>
+                        </a>
+                        <a href="https://github.com/bitkoala/koalasnap" target="_blank">GitHub</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="lang-zh">法律</h4>
+                        <h4 class="lang-en" style="display: none;">Legal</h4>
+                        <a href="privacy.html">
+                            <span class="lang-zh">隐私政策</span>
+                            <span class="lang-en" style="display: none;">Privacy Policy</span>
+                        </a>
+                        <a href="https://bitekaola.com" target="_blank">
+                            <span class="lang-zh">关于我们</span>
+                            <span class="lang-en" style="display: none;">About Us</span>
+                        </a>
+                        <a href="mailto:support@bitekaola.com">
+                            <span class="lang-zh">联系我们</span>
+                            <span class="lang-en" style="display: none;">Contact</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 KoalaSnap. All rights reserved. Made with ?? by BiteKoala</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Reuse language toggle script
+        function toggleLanguage() {
+            const currentLang = localStorage.getItem('koalasnap-lang') || 'zh';
+            const newLang = currentLang === 'zh' ? 'en' : 'zh';
+            localStorage.setItem('koalasnap-lang', newLang);
+            updateLanguage(newLang);
+        }
+
+        function updateLanguage(lang) {
+            const zhElements = document.querySelectorAll('.lang-zh');
+            const enElements = document.querySelectorAll('.lang-en');
+
+            if (lang === 'en') {
+                zhElements.forEach(el => el.style.display = 'none');
+                enElements.forEach(el => el.style.display = '');
+                document.documentElement.lang = 'en';
+            } else {
+                zhElements.forEach(el => el.style.display = '');
+                enElements.forEach(el => el.style.display = 'none');
+                document.documentElement.lang = 'zh-CN';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('koalasnap-lang') || 'zh';
+            updateLanguage(savedLang);
+        });
+    </script>
+</body>
+
+</html>

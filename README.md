@@ -29,13 +29,13 @@
 <div align="center">
 
 ### 产品落地页
-![落地页](yijie.png)
+![落地页](landing-page/yijie.png)
 
 ### 扩展界面
-![插件界面](yijie1.png)
+![插件界面](landing-page/yijie1.png)
 
 ### 区域选择截图
-![区域截图](yijie2.png)
+![区域截图](landing-page/yijie2.png)
 
 </div>
 
@@ -123,6 +123,14 @@
 ├── manifest.json          # Manifest V3 配置文件
 ├── background.js          # 后台服务工作线程
 ├── content.js            # 内容脚本
+├── landing-page/          # 官方产品落地页与展示文件
+│   ├── index.html         # 落地页 HTML (标准首页)
+│   ├── index.css          # 落地页样式表
+│   ├── index.js           # 落地页交互脚本
+│   ├── privacy.html       # 隐私政策
+│   ├── installation.html  # 安装指南
+│   ├── documentation.html # 使用文档
+│   └── yijie*.png         # 页面截图与展示图片
 ├── popup/
 │   ├── popup.html        # 弹出窗口 HTML
 │   ├── popup.css         # 弹出窗口样式
