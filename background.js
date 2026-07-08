@@ -220,19 +220,43 @@ async function handleAreaSelectionComplete(request, sender) {
 // 工具函数：拼接图片
 async function stitchImages(screenshots, totalHeight, viewportHeight, dpr) {
   return new Promise((resolve, reject) => {
+    // 工具函数：Data URL 转 Blob
+    const dataUrlToBlob = (url) => {
+      const parts = url.split(',');
+      const mime = parts[0].match(/:(.*?);/)[1];
+      const bstr = atob(parts[1]);
+      let n = bstr.length;
+      const u8arr = new Uint8Array(n);
+      while (n--) {
+        u8arr[n] = bstr.charCodeAt(n);
+      }
+      return new Blob([u8arr], { type: mime });
+    };
+
     // 加载第一张图片以获取宽度
-    fetch(screenshots[0].dataUrl)
-      .then(res => res.blob())
+    Promise.resolve(dataUrlToBlob(screenshots[0].dataUrl))
       .then(blob => createImageBitmap(blob))
       .then(firstBitmap => {
         const width = firstBitmap.width / dpr;
         const canvas = new OffscreenCanvas(firstBitmap.width, totalHeight * dpr);
         const ctx = canvas.getContext('2d');
 
+        // 工具函数：Data URL 转 Blob，避免 Service Worker 中 fetch data: URI 失败
+        const dataUrlToBlob = (url) => {
+          const parts = url.split(',');
+          const mime = parts[0].match(/:(.*?);/)[1];
+          const bstr = atob(parts[1]);
+          let n = bstr.length;
+          const u8arr = new Uint8Array(n);
+          while (n--) {
+            u8arr[n] = bstr.charCodeAt(n);
+          }
+          return new Blob([u8arr], { type: mime });
+        };
+
         // 加载并绘制所有图片
         const promises = screenshots.map(({ dataUrl, offsetY }) => {
-          return fetch(dataUrl)
-            .then(res => res.blob())
+          return Promise.resolve(dataUrlToBlob(dataUrl))
             .then(blob => createImageBitmap(blob))
             .then(bitmap => {
               ctx.drawImage(bitmap, 0, offsetY * dpr);
@@ -255,8 +279,20 @@ async function stitchImages(screenshots, totalHeight, viewportHeight, dpr) {
 // 工具函数：裁剪图片
 async function cropImage(dataUrl, rect, dpr = 1) {
   return new Promise((resolve, reject) => {
-    fetch(dataUrl)
-      .then(res => res.blob())
+    // 工具函数：Data URL 转 Blob
+    const dataUrlToBlob = (url) => {
+      const parts = url.split(',');
+      const mime = parts[0].match(/:(.*?);/)[1];
+      const bstr = atob(parts[1]);
+      let n = bstr.length;
+      const u8arr = new Uint8Array(n);
+      while (n--) {
+        u8arr[n] = bstr.charCodeAt(n);
+      }
+      return new Blob([u8arr], { type: mime });
+    };
+
+    Promise.resolve(dataUrlToBlob(dataUrl))
       .then(blob => createImageBitmap(blob))
       .then(bitmap => {
         // 使用传入的 devicePixelRatio
@@ -289,4 +325,16 @@ async function cropImage(dataUrl, rect, dpr = 1) {
 // 工具函数：延迟
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function dataUrlToBlob(url) {
+  const parts = url.split(',');
+  const mime = parts[0].match(/:(.*?);/)[1];
+  const bstr = atob(parts[1]);
+  let n = bstr.length;
+  const u8arr = new Uint8Array(n);
+  while (n--) {
+    u8arr[n] = bstr.charCodeAt(n);
+  }
+  return new Blob([u8arr], { type: mime });
 }
