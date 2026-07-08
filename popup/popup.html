@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KoalaSnap - 考拉易截</title>
+  <title data-i18n="extName">KoalaSnap - 考拉易截</title>
   <link rel="stylesheet" href="popup.css">
 </head>
 
@@ -18,8 +18,8 @@
           <circle cx="12" cy="13" r="4"></circle>
         </svg>
       </div>
-      <h1 class="title">KoalaSnap</h1>
-      <p class="subtitle">考拉易截 · 选择截图模式</p>
+      <h1 class="title" data-i18n="extShortName">KoalaSnap</h1>
+      <p class="subtitle" data-i18n="uiSubtitle">考拉易截 · 选择截图模式</p>
     </div>
 
     <!-- Screenshot Modes -->
@@ -33,11 +33,11 @@
           </svg>
         </div>
         <div class="mode-content">
-          <h3 class="mode-title">可见区域</h3>
-          <p class="mode-desc">截取当前屏幕可见内容</p>
+          <h3 class="mode-title" data-i18n="modeVisibleTitle">可见区域</h3>
+          <p class="mode-desc" data-i18n="modeVisibleDesc">截取当前屏幕可见内容</p>
         </div>
         <div class="mode-badge">
-          <span class="badge">快捷</span>
+          <span class="badge" data-i18n="badgeFast">快捷</span>
         </div>
       </button>
 
@@ -49,11 +49,11 @@
           </svg>
         </div>
         <div class="mode-content">
-          <h3 class="mode-title">整页截图</h3>
-          <p class="mode-desc">自动滚动并拼接长图</p>
+          <h3 class="mode-title" data-i18n="modeFullTitle">整页截图</h3>
+          <p class="mode-desc" data-i18n="modeFullDesc">自动滚动并拼接长图</p>
         </div>
         <div class="mode-badge">
-          <span class="badge badge-pro">长图</span>
+          <span class="badge badge-pro" data-i18n="badgePro">长图</span>
         </div>
       </button>
 
@@ -65,11 +65,11 @@
           </svg>
         </div>
         <div class="mode-content">
-          <h3 class="mode-title">区域选择</h3>
-          <p class="mode-desc">自由选择截图区域</p>
+          <h3 class="mode-title" data-i18n="modeAreaTitle">区域选择</h3>
+          <p class="mode-desc" data-i18n="modeAreaDesc">自由选择截图区域</p>
         </div>
         <div class="mode-badge">
-          <span class="badge badge-custom">自定义</span>
+          <span class="badge badge-custom" data-i18n="badgeCustom">自定义</span>
         </div>
       </button>
     </div>
@@ -79,7 +79,7 @@
       <div class="progress-bar">
         <div class="progress-fill" id="progressFill"></div>
       </div>
-      <p class="progress-text" id="progressText">正在截图...</p>
+      <p class="progress-text" id="progressText" data-i18n="progressCapturing">正在截图...</p>
     </div>
 
     <!-- Footer -->
@@ -90,11 +90,12 @@
             d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z">
           </path>
         </svg>
-        <span>快捷键: <kbd>Ctrl+Shift+S</kbd></span>
+        <span><span data-i18n="shortcutText">快捷键:</span> <kbd>Ctrl+Shift+S</kbd></span>
       </div>
     </div>
   </div>
 
+  <script src="i18n.js"></script>
   <script src="popup.js"></script>
 </body>
 

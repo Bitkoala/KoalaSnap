@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "KoalaSnap - 考拉易截",
-  "version": "1.0.1",
-  "description": "强大的截图工具，支持可见区域、整页滚动和区域选择三种截图模式 | Powerful screenshot tool with visible area, full-page, and area selection modes",
+  "name": "__MSG_extName__",
+  "version": "1.0.2",
+  "description": "__MSG_extDesc__",
   "permissions": [
     "activeTab",
     "scripting",
@@ -15,7 +15,7 @@
       "48": "icons/icon-48.png",
       "128": "icons/icon-128.png"
     },
-    "default_title": "KoalaSnap - 考拉易截"
+    "default_title": "__MSG_extName__"
   },
   "background": {
     "service_worker": "background.js"
@@ -31,7 +31,8 @@
         "default": "Ctrl+Shift+S",
         "mac": "Command+Shift+S"
       },
-      "description": "快速截取可见区域"
+      "description": "__MSG_cmdCaptureVisible__"
     }
-  }
+  },
+  "default_locale": "zh_CN"
 }

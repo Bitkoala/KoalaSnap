@@ -1,0 +1,77 @@
+{
+  "extName": {
+    "message": "KoalaSnap - 考拉易截"
+  },
+  "extDesc": {
+    "message": "強大的截圖工具，支援可見區域、整頁滾動和區域選擇三種截圖模式"
+  },
+  "extShortName": {
+    "message": "考拉易截"
+  },
+  "cmdCaptureVisible": {
+    "message": "快速截取可見區域"
+  },
+  "uiSubtitle": {
+    "message": "考拉易截 · 選擇截圖模式"
+  },
+  "modeVisibleTitle": {
+    "message": "可見區域"
+  },
+  "modeVisibleDesc": {
+    "message": "截取當前螢幕可見內容"
+  },
+  "badgeFast": {
+    "message": "快捷"
+  },
+  "modeFullTitle": {
+    "message": "整頁截圖"
+  },
+  "modeFullDesc": {
+    "message": "自動滾動並拼接長圖"
+  },
+  "badgePro": {
+    "message": "長圖"
+  },
+  "modeAreaTitle": {
+    "message": "區域選擇"
+  },
+  "modeAreaDesc": {
+    "message": "自由選擇截圖區域"
+  },
+  "badgeCustom": {
+    "message": "自定義"
+  },
+  "progressCapturing": {
+    "message": "正在截取可見區域..."
+  },
+  "progressFullCapturing": {
+    "message": "正在截取整頁..."
+  },
+  "progressAreaSelect": {
+    "message": "請在頁面上選擇區域..."
+  },
+  "msgSaved": {
+    "message": "截圖已保存！"
+  },
+  "msgFullSaved": {
+    "message": "長截圖已保存！"
+  },
+  "msgFailed": {
+    "message": "截圖失敗，請重試"
+  },
+  "shortcutText": {
+    "message": "快捷鍵:"
+  },
+  "btnConfirm": {
+    "message": "✓ 確認"
+  },
+  "btnCancel": {
+    "message": "✕ 取消"
+  },
+  "hintAreaSize": {
+    "message": "選區大小:"
+  },
+  "hintPixels": {
+    "message": "像素"
+  }
+}

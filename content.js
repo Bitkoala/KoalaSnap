@@ -142,7 +142,7 @@ function startAreaSelection() {
 
         // 确认按钮
         const confirmBtn = document.createElement('button');
-        confirmBtn.textContent = '✓ 确认';
+        confirmBtn.textContent = chrome.i18n.getMessage('btnConfirm');
         confirmBtn.style.cssText = `
       padding: 10px 20px;
       background: #4F46E5;
@@ -194,7 +194,7 @@ function startAreaSelection() {
 
         // 取消按钮
         const cancelBtn = document.createElement('button');
-        cancelBtn.textContent = '✕ 取消';
+        cancelBtn.textContent = chrome.i18n.getMessage('btnCancel');
         cancelBtn.style.cssText = `
       padding: 10px 20px;
       background: rgba(255, 255, 255, 0.9);
@@ -237,7 +237,7 @@ function startAreaSelection() {
       z-index: 2147483649;
       pointer-events: none;
     `;
-        hint.textContent = `选区大小: ${Math.round(rect.width)} × ${Math.round(rect.height)} 像素`;
+        hint.textContent = `${chrome.i18n.getMessage('hintAreaSize')} ${Math.round(rect.width)} × ${Math.round(rect.height)} ${chrome.i18n.getMessage('hintPixels')}`;
         hint.id = '__screenshot_hint';
         document.body.appendChild(hint);
     }

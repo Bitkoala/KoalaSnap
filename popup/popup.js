@@ -12,15 +12,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Event Listeners
     captureVisibleBtn.addEventListener('click', () => {
-        handleCapture('captureVisible', '正在截取可见区域...');
+        handleCapture('captureVisible', chrome.i18n.getMessage('progressCapturing'));
     });
 
     captureFullPageBtn.addEventListener('click', () => {
-        handleCapture('captureFullPage', '正在截取整页...');
+        handleCapture('captureFullPage', chrome.i18n.getMessage('progressFullCapturing'));
     });
 
     captureAreaBtn.addEventListener('click', () => {
-        handleCapture('captureArea', '请在页面上选择区域...');
+        handleCapture('captureArea', chrome.i18n.getMessage('progressAreaSelect'));
         // 区域选择模式下，立即关闭 popup
         setTimeout(() => window.close(), 500);
     });
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 updateProgress(100);
                 setTimeout(() => {
                     hideProgress();
-                    showSuccess('截图已保存！');
+                    showSuccess(chrome.i18n.getMessage('msgSaved'));
                     setTimeout(() => window.close(), 1000);
                 }, 500);
             }
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     clearInterval(interval);
                     updateProgress(100);
                     hideProgress();
-                    showSuccess('长截图已保存！');
+                    showSuccess(chrome.i18n.getMessage('msgFullSaved'));
                     setTimeout(() => window.close(), 1000);
                 }, 3000);
             }
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (error) {
             console.error('Screenshot failed:', error);
             hideProgress();
-            showError('截图失败，请重试');
+            showError(chrome.i18n.getMessage('msgFailed'));
         }
     }
 
@@ -115,13 +115,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (request.action === 'captureComplete') {
             updateProgress(100);
             hideProgress();
-            showSuccess('截图已保存！');
+            showSuccess(chrome.i18n.getMessage('msgSaved'));
             setTimeout(() => window.close(), 1000);
         }
 
         if (request.action === 'captureError') {
             hideProgress();
-            showError(request.message || '截图失败');
+            showError(request.message || chrome.i18n.getMessage('msgFailed'));
         }
     });
 });

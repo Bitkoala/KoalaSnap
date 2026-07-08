@@ -1,0 +1,77 @@
+{
+  "extName": {
+    "message": "KoalaSnap - Powerful Screenshot Tool"
+  },
+  "extDesc": {
+    "message": "Powerful screenshot tool with visible area, full-page, and area selection modes"
+  },
+  "extShortName": {
+    "message": "KoalaSnap"
+  },
+  "cmdCaptureVisible": {
+    "message": "Capture visible area instantly"
+  },
+  "uiSubtitle": {
+    "message": "KoalaSnap · Select Mode"
+  },
+  "modeVisibleTitle": {
+    "message": "Visible Area"
+  },
+  "modeVisibleDesc": {
+    "message": "Capture current visible screen"
+  },
+  "badgeFast": {
+    "message": "Fast"
+  },
+  "modeFullTitle": {
+    "message": "Full Page"
+  },
+  "modeFullDesc": {
+    "message": "Auto-scroll & stitch long pages"
+  },
+  "badgePro": {
+    "message": "Pro"
+  },
+  "modeAreaTitle": {
+    "message": "Selected Area"
+  },
+  "modeAreaDesc": {
+    "message": "Select custom area to capture"
+  },
+  "badgeCustom": {
+    "message": "Custom"
+  },
+  "progressCapturing": {
+    "message": "Capturing..."
+  },
+  "progressFullCapturing": {
+    "message": "Capturing full page..."
+  },
+  "progressAreaSelect": {
+    "message": "Please select an area on the page..."
+  },
+  "msgSaved": {
+    "message": "Screenshot saved!"
+  },
+  "msgFullSaved": {
+    "message": "Full page saved!"
+  },
+  "msgFailed": {
+    "message": "Failed, please try again"
+  },
+  "shortcutText": {
+    "message": "Shortcut:"
+  },
+  "btnConfirm": {
+    "message": "✓ Confirm"
+  },
+  "btnCancel": {
+    "message": "✕ Cancel"
+  },
+  "hintAreaSize": {
+    "message": "Area size:"
+  },
+  "hintPixels": {
+    "message": "pixels"
+  }
+}
