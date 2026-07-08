@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "KoalaSnap - 考拉易截",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "强大的截图工具，支持可见区域、整页滚动和区域选择三种截图模式 | Powerful screenshot tool with visible area, full-page, and area selection modes",
   "permissions": [
     "activeTab",
